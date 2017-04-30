@@ -1,0 +1,1872 @@
+<ion-view ng-cloak title="Annual Report" hide-back-button="true">
+
+<ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios7-bookmarks-outline"></button>
+</ion-nav-buttons>
+<ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+
+
+<ion-slide-box on-slide-changed="slideChanged(index)" active-slide="activeSlide" show-pager="false" scrollbar-y="false">
+
+<ion-slide>
+<ion-content ng-controller="IntroCtrl" id="swipe-area"><img src="images/slides/hand-swipe.png" id="swipe-hand" alt=""><img src="images/slides/hand-swipe-text.png" id="swipe-text" alt=""></ion-content>
+    <ion-content has-header="true" padding="true" class="blue-page "style="background-color:#fff; background-repeat:no-repeat; background-image: url(images/slides/page1.jpg); background-size:contain; background-position:center center;">
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide class="blue-page" ng-controller="MissionCtrl">
+    <ion-content class="mission-container pad " ng-class="currentSlide >= 0 && currentSlide <= 2 ? 'visible' : 'hidden'">
+            <h1 class="white-header">MISSION STATEMENT</h1>
+
+            <p>Our mission is to create an apparel company that can offer superior design, quality and value to the
+                consumer. We will accomplish this by being committed to offering great service and real value to our
+                business partners and consumers. We will provide a pleasant, fair and diverse environment, allowing our
+                associates to grow in their careers and experience constant improvements in their lifestyle.</p>
+            <button class="button-grey mission-button" ng-click="openMissionStatement()">MISSION STATEMENT</button>
+<img src="" alt="" style="height:100%;">
+
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content id="scroll-area"><img src="images/slides/hand-scroll.png" id="scroll-hand"><img src="images/slides/hand-scroll-text.png" id="scroll-text"></ion-content>
+
+    <ion-content ng-controller="ShareholdersCtrl1" has-header="true" class="blue-page" ng-class="currentSlide >= 1 && currentSlide <= 3 ? 'visible' : 'hidden'">
+
+        <div class="pad last">
+
+            <h1 class="white-header">DEAR SHAREHOLDERS</h1>
+
+            <p class="white-header-body">2013 marked Perry Ellis International’s (‘PEI’) 20th year as a publicly traded
+                company, solidifying our position as one of the largest branded lifestyle apparel companies in the
+                world. It was an honor to ring the closing bell at NASDAQ with our fellow associates, to reflect on our
+                historic achievements and to continue our celebration at the Hippodrome Building, as we inaugurated
+                PEI’s new regional headquarters in New York.</p>
+
+            <p class="white-header-body-children">This year was also an extremely difficult environment at retail, which
+                resulted in a revenue decline for our company. As the year unfolded, our company undertook a series of
+                strategic restructuring initiatives to address the macro issues affecting the industry and PEI. As a
+                result, in part of these actions, we experienced revenue declines attributable to the reduction of our
+                private labels and exclusive retail brands. For Fiscal 2014 and 2013, these programs accounted for 18%
+                and 22% of our company’s total revenues, respectively.</p>
+
+            <p class="white-header-body-children">We project these programs will account for 16% of total revenues by
+                the end of Fiscal 2015. To compensate for these revenue losses, our company instituted an infrastructure
+                rationalization program this year. We identified substantial savings that will be recognized in Fiscal
+                2015 and we renewed our credit facility and mortgages at more favorable rates, thereby reducing interest
+                costs. These steps were taken to streamline our business model and put our muscle and our money against
+                our power brands: Perry Ellis®, Original Penguin® by Munsingwear®, Savane®, Farah®, Rafaella®, Laundry
+                by Shelli Segal®, and Ben Hogan®, as well our branded licensed portfolio: Callaway®, PGA TOUR®, Jack
+                Nicklaus®, and Nike® Swim.</p>
+
+            <p class="white-header-body-children">Despite these challenges, we want to share some positive achievements
+                that we recorded:</p>
+
+            <p class="white-header-body-children">• Original Penguin by Munsingwear, Savane and Nike Swim each achieved
+                one of their best years at wholesale, achieving double-digit growth for each brand.</p>
+
+            <p class="white-header-body-children">• Rafaella realized improved profitability as the team exited
+                lower-margin label programs and focused efforts on the core brand itself.</p>
+
+            <p class="white-header-body-children">• PEI’s golf business solidified its dominant position as a global
+                golf apparel vendor. Our Ben Hogan label more than doubled its revenue. We expanded our global reach
+                under the Callaway Golf license to include Europe, the Middle East and Africa. And we launched the
+                powerful licensed Jack Nicklaus brand in the fourth quarter.</p>
+
+            <p class="white-header-body-children">• We achieved growth across each international market where we
+                currently operate, namely Canada, Europe, and Mexico. Overall, our combined international wholesale,
+                retail and licensing businesses now account for 10% of our company’s total business.</p>
+
+            <p class="white-header-body-children">• We executed 13 new domestic and 5 new international licensing
+                agreements, and our licensing revenues increased approximately 10% for the full-year, from $27M to $30M.
+                In addition, our international licensing partners opened 27 new licensed stores, with 16 across Latin
+                America and 11 across Asia--a testament to the global strength of our brands.</p>
+
+            <p class="white-header-body-children">• We added two new direct distribution websites for the Callaway Golf
+                and Farah brands, bringing the total number of e-commerce platforms we operate to 8.</p>
+
+            <p class="white-header-body-children">With our go-forward strategies in place, we are excited to share the
+                following initiatives:</p>
+
+            <p class="white-header-body-children">
+                <span class="medium">• Win with Winning Retailers:</span>
+                Because just less than 80% of our business comes from our domestic wholesale partners, aligning our
+                brands, products and marketing strategies with those partners who can drive mutually beneficial,
+                profitable growth is at the center of our strategy. We are investing capital to install shops and
+                enhance fixtures at key retail flagship locations for our Perry Ellis, Original Penguin, and Rafaella
+                brands, enabling our company to secure prime floor space at retail and drive profitable sales in top
+                locations around the country.</p>
+
+            <p class="white-header-body-children">
+                <span class="medium">• Expand Our Product Offerings:</span>
+                Our company was initially built on the strength of its expertise in men’s sportswear. Since then, we
+                have grown across multiple product categories, including swim, women’s sportswear and performance golf
+                apparel. In 2013, we broadened our golf offerings with the launch of the women’s golf apparel
+                collection. This year, Ben Hogan Signature Collection will be leading efforts with a series of new
+                product categories including golf balls, golf gloves, hats, visors, belts, towels and umbrellas.
+            </p>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+<!-- STILL NEEDS TO BE CLEANED UP A BIT -->
+<ion-slide ng-click="gotoGeorge()">
+
+    <ion-content  delegate-handle="myScroll" has-header="true" padding="true" class=" pad" ng-class="currentSlide >= 2 && currentSlide <= 4 ? 'visible' : 'hidden'" >
+        <!-- IF ITS SHORT AMOUT OF DATA, NO NEED TO STOR THAT AS SCOPE DATA, IT WILL POLUTE THE SCOPE TOO MUCH -->
+        <div ng-controller="ShareholdersCtrl2" >
+            <p class="white-header-body-children">
+                <span class="medium">• Serve Our Consumer Directly:</span>
+                <span class="regular">Our consumer is buying product online, at home and on their mobile devices, and we will serve them wherever and however they choose to engage with our brands. We are shifting our business structure to combine our brick and mortar and wholesale e-commerce teams under one leadership, allowing for best practices and improved efficiency. At direct retail, we continue to evaluate our base of retail stores and e-commerce platforms in order to offer the most comprehensive brand experience.</span>
+            </p>
+
+            <p class="white-header-body-children">
+                <span class="medium">• Lead with Innovation:</span>
+                <span class="regular">Our pipeline of game-changing products is stronger than ever, which is at the heart of our innovation agenda. From Callaway’s Opti-Series, which provides the latest in performance fabrics and construction designed for optimum golf performance to Savane’s eco-friendly “Unifi Repreve®” yarns, which are supplied through recycled water bottles, to Nike Swim’s NG1, which represents the next generation of fast in elite competition swim, all of our brands are actively pursuing breakthroughs in product and process innovation.</span>
+            </p>
+
+            <p class="white-header-body-children">
+                <span class="medium">• Go Global:</span>
+                <span class="regular">A key focus remains our solid platform of momentum in Europe, where our business continues to post strong growth, while we aggressively seek new opportunities in Asia. We are recruiting excellent talent and executing on competitive strategies to further build our powerful global licensing business.</span>
+            </p>
+
+            <p class="white-header-body-children">We would also like to take this opportunity to thank Eduardo Sardiña
+                for his four years of service and contributions, as he exits his role as a member of our Board of
+                Directors. Simultaneously, we are excited to announce the appointment of Alexandra Wilson, co-founder of
+                Gilt, who has been elected to the Board effective February 20, 2014. Our recruitment of Alexandra is a
+                strong indicator of our focus on developing our omni-channel strategies and accelerating our company’s
+                evolution to meet the consumer demands of the 21st century.
+            </p>
+
+            <p class="white-header-body-children">We have built a distinguished company with a foundation that ensures
+                both success and longevity and our culture has been carefully nurtured by the thousands of people who
+                have worked with us over time. It is a culture that enables us to take risks, allowing us to succeed
+                brilliantly, and sometimes to fail…because we know that those around us will help pick us up, dust us
+                off and push us to do better. The PEI culture gives us strength; it unites us and gives us the potential
+                to succeed and grow as one.</p>
+
+            <p class="white-header-body-children">We summarize our story in three words:
+                <span class="medium">POWERFUL LIFESTYLE BRANDS.</span>Those words represent who we are and how we will
+                seize the opportunities ahead.
+            </p>
+
+              <p class="white-header-body-children last">We are grateful to you, our shareholders, to our 2,700 associates and to our customers and consumers around the globe for choosing to join us on our journey.</p>
+
+            <div class="row first last responsive-sm">
+                <div class="col center last">
+<a id="george"></a>
+                    <img ng-src="images/modal/george.jpg" class="w100 flexcontainer-center"
+                         ng-click="openGeorgeModal()">
+
+                    <div style="font-size:1.2em;text-align:center;" class="blue medium">GEORGE FELDENKREIS</div>
+                    <div style="font-size:0.9em;font-family:Gotham Light;margin-top:2px;text-align:center;">CHAIRMAN AND
+                        CHIEF
+                    </div>
+                    <div style="font-size:0.9em;font-family:Gotham Light;text-align:center;">EXECUTIVE OFFICER</div>
+                </div>
+                <div class="col center last">
+                    <img ng-src="images/modal/quote.jpg" class="w100 padding5">
+                </div>
+
+                <div class="col center last ">
+                    <img ng-src="images/modal/oscar.jpg" class="w100 flexcontainer-center" ng-click="openOscarModal()">
+
+                    <div style="font-size:1.2em;text-align:center;" class="blue medium">OSCAR FELDENKREIS</div>
+                    <div style="font-size:0.9em;font-family:Gotham Light;margin-top:2px;text-align:center;">VICE
+                        CHAIRMAN, PRESIDENT
+                    </div>
+                    <div style="font-size:0.9em;font-family:Gotham Light;text-align:center;">AND CHIEF OPERATING
+                        OFFICER
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+<!--Used to Be RootsCTRL-->
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 3 && currentSlide <= 5 ? 'visible' : 'hidden'">
+        <div class="pad last">
+            <h1 class="blue-header">WE, AS A COMPANY,<br>HAVE ROOTS.<br>AND SO DO OUR BRANDS.</h1>
+
+            <p class="blue-header-body-children">Serve Our Consumer Directly: Our consumer is buying product online, at
+                home and on their mobile devices, and we will serve them wherever and however they choose to engage with
+                our brands. We are shifting our business structure to combine our brick and mortar and wholesale
+                e-commerce teams under one leadership, allowing for best practices and improved efficiency. At direct
+                retail, we continue to evaluate our base of retail stores and e-commerce platforms in order to offer the
+                most comprehensive brand experience.</p>
+
+            <p class="blue-header-body-children">There is only one way to cover a broad spectrum of lifestyles and that
+                is a diverse portfolio of brands. Each of our core brands reflects a heritage of quality and
+                authenticity that has been redefined to appeal to today’s consumer.</p>
+
+            <p class="blue-header-body-children last">And of course, we pay homage to our namesake, Perry Ellis, who
+                launched his first collection,Portfolio®, in 1976. He was an innovator. A trailblazer. A pioneer. Perry
+                Ellis wore his wit on his sleeve and believed you should never take the clothes you wear too seriously.
+                He created new American classics and influenced an industry.</p>
+
+            <h1 class="blue-header">HERITAGE OF AUTHENTICITY</h1>
+
+            <p class="grey-medium-body-children first">
+                <span class="blue-bullets">•</span>&nbsp;Abbott Peterson launched the iconic Munsingwear® Golf Shirt in
+                1955, giving birth to our icon Pete the Penguin and the Original Penguin® brand.</p>
+
+            <p class="grey-medium-body-children">
+                <span class="blue-bullets">•</span>&nbsp;The Farah® brand was born in the heart of Texas in 1920,
+                originally producing work and combat pants before being discovered across the pond.</p>
+
+            <p class="grey-medium-body-children">
+                <span class="blue-bullets">•</span>&nbsp;The Ben Hogan® and Jack Nicklaus® brands both drive
+                authenticity in the golf market through legendary sports namesakes.</p>
+
+            <p class="grey-medium-body-children">
+                <span class="blue-bullets">•</span>&nbsp;Our Laundry by Shelli Segal® and C&amp;C California® brands
+                draw on a heritage representative of the California lifestyle that first inspired them.</p>
+
+            <p class="grey-medium-body-children last">
+                <span class="blue-bullets">•</span>&nbsp;Jantzen®, a brand synonymous with timeless glamour, has a rich
+                history of providing high-end swimwear to women for over a century.</p>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+
+<ion-slide>
+    <ion-content class=" perryquote-container" ng-class="currentSlide >= 4 && currentSlide <= 6 ? 'visible' : 'hidden'">
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 5 && currentSlide <=7 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row responsive-sm ">
+                <div class="col">
+                    <img ng-src="images/slides/pair1.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair2.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair3.jpg" style="width:100%;">
+                </div>
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/pair4.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair5.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair6.jpg" style="width:100%;">
+                </div>
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/pair7.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair8.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair9.jpg" style="width:100%;">
+                </div>
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/pair10.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair11.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair12.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/pair13.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair14.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair15.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row responsive-sm">
+
+                <div class="col">
+                    <img ng-src="images/slides/pair16.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair17.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/pair18.jpg" style="width:100%;">
+                </div>
+
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col"><img ng-src="images/slides/pair19.jpg" style="width:100%;"></div>
+                <div class="col"><img ng-src="images/slides/pair20.jpg" style="width:100%;"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="white-page  mensSlide" padding="true" ng-controller="IntroBrandSlateMens" ng-class="currentSlide >= 6 && currentSlide <=8 ? 'visible' : 'hidden'">
+        <div >
+            <div class="mens-logo-container"></div>
+
+            <div class="intro-slate-container">
+                <div>
+                    <h1 class="intro-white-header">FASHION IS ONE THING;<br>STYLE ANOTHER.</h1>
+                </div>
+                <div>
+                    <button class="button-grey" ng-click="openMensModal()">READ MORE</button>
+                </div>
+            </div>
+
+            <div class="mens-logo-container2"></div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide ng-controller="PerryEllisCtrl">
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 7 && currentSlide <=9 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/perryellis.jpg">
+
+                    <p class="blue-medium first">VERY PERRY ELLIS.</p>
+
+                    <p class="brand-body">Perry Ellis was the master of making it all look easy. He played with fashion
+                        convention simply by not taking it so seriously. Following only what felt right. Dressing up
+                        dressed-down. Eschewing etiquette while simultaneously elevating it. With playful patterns and
+                        uncommon proportions, he rewrote the book on fashion. Today, his legacy lives on in a whole new
+                        generation of easygoing trailblazers.</p>
+
+                    <p class="brand-body">The Perry Ellis® brand offers a full lifestyle sportswear collection: dressier
+                        suit separates, mix and match shirts, trousers, knits, sweaters and outerwear. We stand for
+                        innate personal style, not following fads; having it together without trying too hard. There has
+                        never been a better time to be...Very Perry Ellis.</p>
+
+                    <div class="row no-padding ">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Perry Ellis Portfolio® offers modern, dressy
+                                assortments of distinct suits, dress shirts, ties, footwear and accessories. Perfect for
+                                the boardroom or a wedding.</p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Perry Ellis collection offers modern sportswear
+                                suitable for the office, but easily transitioned for a night out. Created for the Very
+                                Perry look.</p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Perry Ellis collection offers modern sportswear
+                                suitable for the office, but easily transitioned for a night out. Created for the Very
+                                Perry look.</p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;
+                                <span style="font-style:italic;">Perry Ellis: An American Original</span>&nbsp;book
+                                published, celebrating the life and work of our namesake designer and re-introducing his
+                                influence to a new generation.</p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialPerry">
+                            <div ng-click="openPerry(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+        
+                <div class="col no-padding perry-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="perryellis-slate1" ng-class="currentSlide >= 8 && currentSlide <= 10 ? 'visible' : 'hidden'">
+      
+    </ion-content>
+</ion-slide>
+
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="perryellis-slate2" ng-class="currentSlide >= 9 && currentSlide <=11 ? 'visible' : 'hidden'">
+ <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide ng-controller="OpgCtrl">
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 10 && currentSlide <=12 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm">
+                <div class="col col-80 pad">
+                    <img ng-src="images/logos/opg.jpg">
+
+                    <p class="blue-medium first">BE AN ORIGINAL.</p>
+
+                    <p class="brand-body">The Original Penguin® brand is a youth culture icon that represents a mix of
+                        American Sportswear and contemporary fashion appealing to a style savvy consumer who’s into
+                        details, but doesn’t take fashion too seriously. We pay homage to our brand heritage, while
+                        being flexible enough to stay culturally relevant in our global markets, reworking our archive
+                        of mid-century classics to reflect today’s lifestyle without compromising that heritage or the
+                        craftsmanship that established the Original Penguin name. This year, we launched The Earl 2.0, a
+                        modern design update to the classic Earl Polo, and the P55 Chino, our answer to a wearable
+                        bottom for both casual and refined needs. Because you can’t stay “Original” by doing what you’ve
+                        always done.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;“Be An Original” brand positioning introduced
+                                as a transformative platform to guide the Original Penguin collection for all future
+                                initiatives.</p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Launched new flagship retail store in the NoHo
+                                area in Manhattan, New York.</p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Double-digit growth at key retailers in FY
+                                2014, driven by focus on presenting the lifestyle brand as a collection rather than a
+                                classification business.</p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialPenguin">
+                            <div ng-click="openPenguin(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col no-padding opg-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  class="opg-slate" ng-class="currentSlide >= 11 && currentSlide <=13 ? 'visible' : 'hidden'">
+      <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide ng-controller="FarahCtrl">
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 12 && currentSlide <=14 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/farah.jpg">
+
+                    <p class="blue-medium first">SINCE THE 1920'S.</p>
+
+                    <p class="brand-body">The Farah® brand is rooted in rich heritage and bolstered by street
+                        credibility, leveraging creative ambassadors to drive success. These extraordinary individuals
+                        are empowered to become product developers, storytellers and educators inspiring millions of
+                        consumers. For fashion-minded hipsters in East London and international artists alike, the name
+                        Farah represents a melding of bold style and solid quality that resonates with youth of all
+                        walks.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Citizens of Farah campaign introduced 12
+                                ambassadors from different creative fields, including DJ/producer Sasha, radio
+                                DJ/comedian Shaun Keaveny and singer/songwriter Lewis Watson.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Initiated Farah Fridays, a month-long weekly
+                                event series designed to help 11 to 25-year-olds realize their creative talent,featuring
+                                45 emerging artists and attended by 50,000 fans.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;As fashion partner of NME Awards, reached 6
+                                million consumers and featured Farah branding at event on Awards night.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <li ng-repeat="social in socialFarah">
+                            <div ng-click="openFarah(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col no-padding farah-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="farah-slate"  ng-class="currentSlide >= 13 && currentSlide <=15 ? 'visible' : 'hidden'">
+        <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide ng-controller="CubaveraCtrl">
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 14 && currentSlide <=16 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/cubavera.jpg">
+
+                    <p class="blue-medium first">LIVE THE GOOD LIFE.</p>
+
+                    <p class="brand-body">A contemporary take on timeless tradition: this is what the Cubavera® brand
+                        represents. This is what sets us apart as a premier Latin men’s sportswear brand. Our roots run
+                        deep. The guayabera has come a long way from its humble origins though, and our brand has
+                        evolved with it, shifting from a single signature shirt to a Hispanic-inspired lifestyle
+                        collection. We continue to find relevant ways to present new product in an ever-changing
+                        American landscape while staying true to our roots. Style is our heritage.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Our new wedding campaign took inspiration from
+                                the architecture of the Biltmore Hotel in Coral Gables, reflecting the Cubavera brand’s
+                                rich culture and resonating with our consumer’s deep passion for travel and “The Good
+                                Life.”
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;We intend to capitalize on the identity we’re
+                                building as a destination wedding apparel resource, strengthening our existing
+                                relationships and building new relationships with retail partners.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Expanded product offering introduced a new pant
+                                assortment, newly developed guayaberas and graphic tees.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <li ng-repeat="social in socialCubavera">
+                            <div ng-click="openCubavera(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col no-padding cubavera-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="cubavera-slate" ng-class="currentSlide >= 15 && currentSlide <=17 ? 'visible' : 'hidden'">
+ <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 16 && currentSlide <=18 ? 'visible' : 'hidden'">
+        <div  class=" ">
+            <div class="row no-padding responsive-sm ">
+                <div class="col pad">
+                    <img ng-src="images/logos/savane.jpg">
+
+                    <p class="blue-medium first">FIT TO ACHIEVE.</p>
+
+                    <p class="brand-body">Savane® apparel is a leader in performance, technology and innovation with a
+                        full sportswear collection launch offering an array of styles, silhouettes and fabrications for
+                        every wearing occasion. From clean khakis to no iron grab-and-go dress pants, shirts and suit
+                        separates, men will be ready to get down to business with Savane, and Fit to Achieve™ whatever
+                        awaits when the workday is done.</p>
+
+                    <p class="brand-body">The Savane marketing strategy is resonating with our consumer. Our digital
+                        campaigns have seen incredible response rates and consumer interest. Building on this momentum
+                        and growing consumer outreach by adding ESPN magazine print ads, as well as retail-specific
+                        initiatives, 2014 promises to be a banner year for this lifestyle brand.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;OFY 2015 will mark expansion from a primarily
+                                bottoms classification-driven business into a full modern lifestyle sportswear
+                                collection.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Focus on innovative products includes:
+                                sustainable Eco-Start® products made with Repreve® recycled fibers and slim fit Travel
+                                Intelligence® using our signature CRUSHPROOF® technology.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;The brand won a silver ADDY (advertising
+                                industry) award for its Eco-Start® product in-store launch.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col no-padding savane-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="savane-slate"  ng-class="currentSlide >= 17 && currentSlide <=19 ? 'visible' : 'hidden'" >
+ <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="white-page  womensSlide" padding="true" ng-controller="IntroBrandSlateWomens"  ng-class="currentSlide >= 18 && currentSlide <=20 ? 'visible' : 'hidden'">
+    <div >
+            <div class="womens-logo-container"></div>
+
+            <div class="intro-slate-container">
+                <div>
+                    <h1 class="intro-white-header">BOLD AND BRILLIANT.</h1>
+                </div>
+                <div>
+                    <button class="button-grey" ng-click="openWomensModal()">READ MORE</button>
+                </div>
+            </div>
+
+            <div class="womens-logo-container2"></div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide ng-controller="RafaellaCtrl">
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 19 && currentSlide <=21 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/rafaella.jpg">
+
+                    <p class="blue-medium first">IT FITS!</p>
+
+                    <p class="brand-body">Rafaella® apparel speaks to the modern woman: in demand, on the go and always
+                        on trend. When we make clothes for her, we make sure “It Fits.” Her style, her life and most
+                        importantly, her body. The result is a solid collection of staple sportswear pieces that look
+                        polished, full of personality and confident for work, play and everything in between. Our
+                        updated product and brand identity have paved the way for the lifestyle brand to expand into new
+                        product categories.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Rafaella Sport: A perfect, sporty weekend-wear
+                                complement to the main collection, consisting of knits, wovens and denim featuring
+                                Rafaella core fits for style and comfort.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Rafaella Accessories: A stylish new collection
+                                of handbags, belts, small leather goods and cold weather accessories launching in time
+                                for the 2014 holiday season.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Deepening the brand’s influence with a
+                                multicultural consumer base, the Rafaella team signed actress, model and working mother,
+                                Aylin Mujica, as a new brand ambassador to exemplify the Rafaella woman.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialRafaella">
+                            <div ng-click="openRafaella(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col no-padding rafaella-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="rafaella-slate" ng-class="currentSlide >= 20 && currentSlide <=22 ? 'visible' : 'hidden'">
+ <div ><img src="" alt="" style="height:100%;"></div>
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide ng-controller="LaundryCtrl">
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 21 && currentSlide <=23 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/laundry.jpg">
+
+                    <p class="blue-medium first">PRETTY AND POLISHED. SEXY AND SOPHISTICATED.<br>EASY AND EFFORTLESS.
+                    </p>
+
+                    <p class="brand-body">Vibrant, confident and chic, the Laundry by Shelli Segal® collection has been
+                        shaping the way women dress since 1988, and the brand continues to inspire women today with its
+                        iconic styling and stunning detail. While our core remains our dress and swim classification
+                        businesses, the contemporary brand has fast become a true lifestyle brand with nearly a dozen
+                        licensed categories and a recent expansion into suit separates launching in 2014.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Sales in the dress business have quadrupled
+                                since our acquisition of the business in 2008.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;The brand has contributed significantly to
+                                royalty revenues, growing from strictly a dress business into full lifestyle comprising
+                                outerwear, swim, accessories, fragrance, sleep and loungewear, girls’ dresses, home and
+                                bedding.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;This year we launched hosiery, suit separates
+                                and a small sportswear capsule.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialLaundry">
+                            <div ng-click="openLaundry(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col no-padding laundry-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide ng-controller="CaliforniaCtrl">
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 22 && currentSlide <=24 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/california.jpg">
+
+                    <p class="brand-body first last">From the vintage-inspired, buttery soft cotton tee that made the
+                        brand famous, C&amp;C California® has expanded to include a complete collection of woven tops
+                        and bottoms, leggings, dresses, luxe cashmere sweaters and, as of this year, stylish C&amp;C
+                        Sport™ activewear.</p>
+
+                    <ul>
+                        <li ng-repeat="social in socialCalifornia">
+                            <div ng-click="openCalifornia(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col no-padding california-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="white-page  golfSlide" padding="true" ng-controller="IntroBrandSlateGolf" ng-class="currentSlide >= 23 && currentSlide <=25 ? 'visible' : 'hidden'">
+        <div  >
+            <div class="golf-logo-container"></div>
+            <div class="intro-slate-container">
+                <div>
+                    <h1 class="intro-white-header">STRATEGY, POISE<br>AND FOCUS.</h1>
+                </div>
+                <div>
+                    <button class="button-grey " ng-click="openGolfModal()">READ MORE</button>
+                </div>
+            </div>
+
+            <div class="golf-logo-container2"></div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 24 && currentSlide <=26 ? 'visible' : 'hidden'" >
+        <div   class=" ">
+            <div class="row no-padding responsive-sm ">
+                <div class="col pad">
+                    <img ng-src="images/logos/callaway.jpg">
+
+                    <p class="blue-medium first">TRUE GOLF AUTHENTICITY AND INNOVATION.</p>
+
+                    <p class="brand-body">Callaway® apparel is the ultimate combination of golf authenticity and classic
+                        style. Always innovative, always an outperformer. Because apparel that offers quality,
+                        performance, functionality and fit is as important to both men and women golfers as the
+                        equipment they use. Callaway apparel is designed for those who love the game of golf. It
+                        represents where the game has been, and where the game is going.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Distribution in over 6,500 doors across luxury
+                                retailers, department stores, sporting goods stores, on-course and off-course specialty
+                                shops, big box and corporate.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Recent licensing agreement expansion to include
+                                territories across Europe, the Middle East and Africa.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Worn by over 25 professional golfers on the PGA
+                                TOUR, Web.com TOUR, European Tour and LPGA, including: Patrick Reed, Thomas Bjorn,
+                                Alvaro Quiros and Sandra Gal.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Addition of direct-to-consumer business via
+                                http://www.callawayapparel.com.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col no-padding callaway-pane panes"><img src="" style="height:100%;" alt=""></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="callaway-slate1"  ng-class="currentSlide >= 25 && currentSlide <=27 ? 'visible' : 'hidden'" >
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="callaway-slate2"  ng-class="currentSlide >= 26 && currentSlide <=28 ? 'visible' : 'hidden'">
+        <div  ></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 27 && currentSlide <=29 ? 'visible' : 'hidden'" >
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-50 pad">
+                    <img ng-src="images/logos/pga.jpg">
+
+                    <p class="blue-medium first">ARE YOU TOUR MATERIAL.</p>
+
+                    <p class="brand-body">The PGA TOUR is synonymous with high performance and a commitment to
+                        excellence--qualities that have been incorporated into the pro styling of PGA TOUR® apparel. The
+                        line offers superior quality, performance and comfort for men and women, golfers and non-golfers
+                        alike. PGA TOUR apparel performs like a champion while remaining a leader in fashion
+                        innovation.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Launched multiplatform Win a Day campaign with
+                                2013 Major Championship winner and brand ambassador, Jason Dufner.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Superior quality, performance and comfort for
+                                golfers and non-golfers alike.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;PGA TOUR growth fueled by licensing agreement
+                                extension into international territory following the PGA TOUR’s announced tournament
+                                expansion across Canada (PGA TOUR Canada) and Latin America (PGA TOUR Latinoamérica).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col no-padding pga-pane panes"><img src="" style="height:100%;" alt=""></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="pga-slate"  ng-class="currentSlide >= 28 && currentSlide <=30 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 29 && currentSlide <=31 ? 'visible' : 'hidden'">
+        <div  ng-controller="GrandCtrl">
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/grand.jpg">
+
+                    <p class="blue-medium first">ON COURSE. OFF COURSE. CHANGE COURSE.</p>
+
+                    <p class="brand-body">Munsingwear introduced the world famous Grand Slam® knit shirt in 1951,
+                        creating an instantly iconic classic. The sport of golf has since become a lifestyle, not just a
+                        few hours on the course. The tagline “On Course. Off Course. Change Course.” was developed to
+                        characterize this attitude, and the Ball in Motion icon was introduced to represent the brand’s
+                        forward motion as it earns the loyalty of both male and female consumers. Grand Slam apparel:
+                        the future is already here.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;D.A. Points is the brand ambassador, leveraging
+                                a player with multiple wins, a huge fan following and impressive social media influence.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;In-store visuals relay the brand message to the
+                                consumer at the point-of-sale and are reinforced by collaboration with retailers for
+                                direct-to-messaging.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialGrand">
+                            <div ng-click="openGrand(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col no-padding grand-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="grand-slate"  ng-class="currentSlide >= 30 && currentSlide <=32 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 31 && currentSlide <=33 ? 'visible' : 'hidden'">
+        <div  ng-controller="HoganCtrl">
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/hogan.jpg">
+
+                    <p class="blue-medium first">ON COURSE. OFF COURSE. CHANGE COURSE.</p>
+
+                    <p class="brand-body">Legendary golfer Ben Hogan had it right: “The most important shot in golf is
+                        the next one.” It’s as true in the golf apparel business as in the game. The line is styled,
+                        designed and infused with the top-notch performance he demanded. He prided himself on the idea
+                        that “there are no shortcuts in the quest for perfection.” This has become the brand’s mantra.
+                        The Ben Hogan® collection is reflective of the legend himself--exceptional style sense with a
+                        passion for excellence.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Sold in over 3,000 doors in the U.S. and
+                                Canada.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Soft goods launch of new product categories
+                                including golf balls, golf gloves, hats, visors, belts, towels and umbrellas.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Introduced a new signature line of
+                                premium-quality Ben Hogan product.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialHogan">
+                            <div ng-click="openHogan(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col no-padding hogan-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="hogan-slate"  ng-class="currentSlide >= 32 && currentSlide <=34 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 33 && currentSlide <=35 ? 'visible' : 'hidden'" >
+        <div >
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-50 pad">
+                    <img ng-src="images/logos/jack.jpg">
+
+                    <p class="blue-medium first">UNCOMPROMISED PERFECTION.</p>
+
+                    <p class="brand-body">Nicknamed the “Golden Bear,” Jack Nicklaus is widely regarded as a sports icon
+                        and the greatest champion in the history of golf. Winning a record total of 18 professional
+                        major championship titles, 73 official TOUR victories and 120 total victories worldwide,
+                        Nicklaus serves as a brand ambassador for the line. There is no name more synonymous with
+                        legendary greatness than Jack Nicklaus and there’s no line of premium pro-performance clothing
+                        more deserving of this name than Jack Nicklaus® golf apparel.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;Recent licensing agreement to design, develop,
+                                manufacture and distribute men’s and ladies’ sportswear, tailored clothing and
+                                accessories under the Jack Nicklaus brand and Golden Bear icon.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Territories include U.S., Canada and Mexico.
+                                International design and distribution for 12 countries outside western hemisphere.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col no-padding jack-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="jack-slate"  ng-class="currentSlide >= 34 && currentSlide <=36 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="white-page  swimSlide" padding="true" ng-controller="IntroBrandSlateSwim" ng-class="currentSlide >= 35 && currentSlide <=37 ? 'visible' : 'hidden'">
+        <div >
+            <div class="swim-logo-container"></div>
+            <div class="intro-slate-container">
+                <div>
+                    <h1 class="intro-white-header">CUTTING CORNERS<br>ISN'T AN OPTION.</h1>
+                </div>
+                <div>
+                    <button class="button-grey " ng-click="openSwimModal()">READ MORE</button>
+                </div>
+            </div>
+            <div class="swim-logo-container2"></div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 36 && currentSlide <=38 ? 'visible' : 'hidden'"  >
+        <div ng-controller="NikeCtrl">
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/nike.jpg">
+
+                    <p class="blue-medium first">REVOLUTIONIZING SWIM.</p>
+
+                    <p class="brand-body">Perry Ellis International is revolutionizing the sport through the Nike® Swim
+                        brand with constant innovation in competition and training to define the next generation of
+                        outfitting for sport. Performance fabrics, unique design and technologically superior
+                        construction come together to maximize efficiency on land and in the water. PEI is the official
+                        licensee in the USA, Canada and Mexico for the world’s leading sports and fitness company, to
+                        design, market and distribute competitive and active swimwear, swim gear and related apparel for
+                        men, women and young athletes. Nike Swim products are sold through team dealers, sporting goods,
+                        better specialty and department stores.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first">
+                                <span class="blue-bullets">•</span>&nbsp;This year represented our biggest increase in
+                                Nike Swim sales over the last 6 years, with double-digit growth across all distribution
+                                channels, and across all product categories.
+                            </p>
+
+                            <p class="grey-brand-body-children">
+                                <span class="blue-bullets">•</span>&nbsp;Initiative-based focus on Performance Swim/Swim
+                                Gear aided market share growth within the Team/Specialty channel and Sporting Goods
+                                channel, while in Women’s Swim, efforts resulted in excellent placement of Women’s Beach
+                                and a new Women’s Swim Training offering.
+                            </p>
+
+                            <p class="grey-brand-body-children last">
+                                <span class="blue-bullets">•</span>&nbsp;Finalized technical development and received
+                                FINA approval on a new offering of elite competition swimwear slated for launch in FY
+                                2015, laying the foundation for a repeat in double-digit growth in all channels and all
+                                product categories.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div ng-click="openNike(socialNike.link)">
+                                <img class="icons" ng-src="{{socialNike.image}}">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col no-padding nike-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="nike-slate1" ng-class="currentSlide >= 37 && currentSlide <=39 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="nike-slate2" ng-class="currentSlide >= 38 && currentSlide <=40 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 39 && currentSlide <=41 ? 'visible' : 'hidden'">
+        <div  ng-controller="JantzenCtrl">
+            <div class="row no-padding responsive-sm ">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/jantzen.jpg">
+
+                    <p class="blue-medium first">TIMELESS GLAMOUR.</p>
+
+                    <p class="brand-body">For over 100 years, the Jantzen® brand has been rooted in history as one of
+                        the first American fashion brands and is represented by the world-famous Diving Girl. Iconic,
+                        desired, ahead of its time, the brand has a long history of outfitting bombshells and beauties.
+                        As experts in fit and innovation, Jantzen swimwear remains a poolside reflection of every woman
+                        that transcends a time, a place and even an era.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first last">
+                                <span class="blue-bullets">•</span>&nbsp;The Jantzen® line reclaims its position as the
+                                iconic brand for Timeless Glamour, exemplified in the award-winning Swimming In It
+                                campaign. The expansion of Lycra Beauty & Xtra-Life Lycra in the line continues a key
+                                partnership with Invista.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li ng-repeat="social in socialJantzen">
+                            <div ng-click="openJantzen(social.link)">
+                                <img class="icons" ng-src="{{social.image}}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col no-padding jantzen-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="jantzen-slate" ng-class="currentSlide >= 40 && currentSlide <=42 ? 'visible' : 'hidden'" >
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 41 && currentSlide <=43 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-sm">
+                <div class="col col-67 pad">
+                    <img ng-src="images/logos/jag.jpg">
+
+                    <p class="blue-medium first">ACTIVE-INSPIRED FASHION.</p>
+
+                    <p class="brand-body">Australian born but an icon of Southern California swim for over 30 years, the
+                        Jag® name represents more than a brand; it represents a way of living. Carefully crafted for the
+                        woman who lives life to the fullest, it’s the ultimate expression of comfortable, creative,
+                        modern swimwear from bikinis to board shorts to cover-ups to signature tankinis. Her active
+                        lifestyle is enhanced with fashion that’s easy to live in and amplifies the energetic spirit of
+                        every woman.</p>
+
+                    <div class="row no-padding responsive-sm">
+                        <div class="col col-67">
+                            <p class="grey-brand-body-children first last">
+                                <span class="blue-bullets">•</span>&nbsp;Jag swimwear stays true to “active-inspired”
+                                heritage and goes beyond the tankini with addition of one-pieces and bra-sized bikini
+                                tops. Growth opportunity in cover-ups; boardshorts continue to drive the business.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col no-padding jag-pane panes"><img src="" style="height:100%;" alt=""></div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="jag-slate"  ng-class="currentSlide >= 42 && currentSlide <=44 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 43 && currentSlide <=45 ? 'visible' : 'hidden'">
+        <div  class="no-padding">
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img src="images/slides/omni-grid-row.jpg" style="width:100%;">
+                </div>
+            </div>
+
+            <div class="row responsive-sm last">
+                <div class="col pad">
+                    <h1 class="blue medium">SOCIAL MEDIA</h1>
+
+                    <p class="brand-body first ">
+                        <span class="blue-bullets">•</span>&nbsp;20 Days of Merry Perry built on the previous year’s
+                        success, highlighting a different product each day over the holidays on PerryEllis.com and
+                        across social media channels.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Blogs have increased engagement for the Perry Ellis®,
+                        C&C California® and Original Penguin® brands. The latter features a customized Influencers blog.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;The Original Penguin website saw a 60% increase in
+                        holiday traffic driven by Google and Bing global campaigns.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;The Cubavera® brand has the highest Facebook engagement
+                        and fan loyalty of all PEICorp brands. Its engagement rate often ranks at #1 out of 128 Fashion
+                        Brands tracked through SocialBakers.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Monitoring ROI by partnering with SocialBakers, a
+                        social media analytics platform allowing us to measure our social media campaigns.
+                    </p>
+                </div>
+
+                <div class="col pad">
+                    <h1 class="blue medium">E-COMMERCE</h1>
+
+                    <p class="brand-body first">
+                        <span class="blue-bullets">•</span>&nbsp;8 total websites, including 2 new launches in
+                        CallawayApparel.com and Farah.co.uk.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;PerryEllis.com saw double-digit growth in sales and
+                        launched bilingual format; Perry Ellis America line launched in Fall 2013.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Launched e-Gift Cards across all e-commerce sites.
+                    </p>
+
+                    <h1 class="blue medium first">3RD PARTY E-COMM</h1>
+
+                    <p class="brand-body first last">
+                        <span class="blue-bullets">•</span>&nbsp;Sales grew over 20%, a solid complement to our
+                        wholesale business as we support pure online retailers, such as Amazon, as well as our
+                        brick-and-mortar retail partners’ digital strategies.
+                    </p>
+                </div>
+            </div>
+
+              <div class="row no-padding responsive-md">
+                <div class="col col-50 no-padding blue-page pad last" style="height:450px;">
+                    
+                    <h1 class="white-header">OMNI-CHANNEL<br>STRATEGY</h1>
+
+                    <p class="brand-body">Whether it’s social media, brick-and-mortar or click and order, we believe the key to building strong consumer relationships is in tailoring focused brand identities that translate with fluidity across all touchpoints. In this way, we make our brands accessible to today’s ever-evolving consumer.Wherever. Whenever. However they engage. We work tirelessly to learn and improve, customizing our distribution and engagement channels to elevate experiences and strengthen brand awareness.</p>
+
+                </div>
+
+                <div class="col col-50 no-padding">
+                    <img src="images/slides/omni.jpg" style="height:450px; float:right;">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide class="white-page">
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 44 && currentSlide <=46 ? 'visible' : 'hidden'">
+        <div  class=" blue-page no-padding ">
+            <div class="row responsive-sm white-page">
+                <div class="col-10"></div>
+                <div class="col">
+                    <img src="images/slides/sourcing1.jpg" style="width:100%;">
+                    <img src="images/slides/sourcing2.jpg" style="width:100%;">
+                </div>
+                <div class="col-10"></div>
+
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col-10"></div>
+                <div class="col pad last">
+                    <h1 class="white-header first">SOURCING AND INNOVATION</h1>
+
+                    <p class="white-header-body-children last">Innovation is paramount. It is the inspiration that permeates all areas of our company. Product is king and the ability to offer fast fashion is crucial in today’s marketplace. Perry Ellis International prides itself on being a pioneer, utilizing a wide network of global factories. We are at the forefront of cutting-edge manufacturing trends, as our company constantly scours the globe to source new resources, exploring research and new technologies that keep our production contemporary and competitive, seeking out the best fibers, fabrics and yarns at the best prices.</p>
+                </div>
+                <div class="col-10"></div>
+            </div>
+             <div class="row pad responsive-sm white-page" style="height:22px">
+        
+            </div>
+            
+             <div class="row responsive-sm white-page no-padding">
+                <div style="width:100%">
+                    <img src="images/slides/opti.jpg" style="width:100%;">
+                </div>
+            </div>
+
+            <div class="row responsive-sm white-page">
+                <div class="col pad ">
+                    <p class="brand-body ">
+                        <span class="blue-bullets">•</span>&nbsp;Emphasis placed on enhancing internal assessments and
+                        protocols; training and education programs put into place specifically relating to health &
+                        safety, building and fire safety to elevate existing practices.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Global sourcing division seeks to expand our reach into
+                        duty-free regions with a primary focus on ensuring a better product value proposition.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;1 million units manufactured using eco-friendly
+                        recycled Repreve®, a fiber used to weave fabrics with other components.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Dedicated internal audit teams execute supplier
+                        engagement programs that include factory evaluations, monitoring, capacity building and education
+                        to ensure a sustainable global supply chain.
+                    </p>
+                </div>
+
+                <div class="col pad last">
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Initiated “Speed to Market” campaign, moving approvals
+                        closer to the source of manufacturing to bring product to customers faster.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Exclusive next generation Crushproof® no iron
+                        technology used in Axist® Ultra Series™ dress pants. We have leveraged the success of the
+                        Crushproof technology into Savane® Travel Intelligence® apparel.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;The Original Penguin® brand introduced dip-dyed tank
+                        tops and t-shirts, using a dying technique that makes each garment’s dye pattern unique.
+                    </p>
+
+                    <p class="brand-body">
+                        <span class="blue-bullets">•</span>&nbsp;Callaway® Weather series was launched, introducing
+                        product that features weather-resistant technology, such as 20,000mm waterproof fabric with
+                        breathability and 2 ½ layer lamination.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 45 && currentSlide <=47 ? 'visible' : 'hidden'">
+        <div  class=" no-padding">
+            <div class="row responsive-sm pad">
+                <div class="col-10"></div>
+                <div class="col">
+                    <h1 class="blue-header">CORPORATE SOCIAL RESPONSIBILITY</h1>
+
+                    <p class="brand-body last">Trends come and go, but the good you do is enduring. At Perry Ellis
+                        International, those are words to live by. We are committed to making a lasting impact on local
+                        communities, supporting various philanthropic organizations each year under five pillars of
+                        corporate social responsibility: health care, education, arts & entertainment, human services
+                        and industry-related causes.</p>
+                </div>
+                <div class="col-10"></div>
+            </div>
+            <div class="row blue-page responsive-md no-padding">
+                <div class="col col-33 social-pane no-padding"><img src="" style="height:100%;" alt=""></div>
+                <div class="col blue-page pad">
+                    <p class="white medium">FASHION INDUSTRY</p>
+
+                    <p class="brand-body">Our CEO George Feldenkreis received the Lifetime Achievement Award from the
+                        Fashion Scholarship Fund on January 8th. The organization contributed to numerous scholarships
+                        awarded to 131 students from 46 different colleges nationwide.</p>
+
+                    <p class="white medium">HUMAN SERVICES</p>
+
+                    <p class="brand-body">PEI has a long history of partnering with Habitat for Humanity. We sponsored
+                        the Home Builders Blitz on February 22nd and volunteer associates pitched in to help the
+                        organization build, renovate and repair more than 300 homes across the U.S.</p>
+
+                    <p class="white medium">EDUCATION</p>
+
+                    <p class="brand-body last">As corporate partner of the Big Brothers & Big Sisters organization,
+                        Perry Ellis International hosts “LITTLES” in Miami each month. They enjoy meals and a workshop,
+                        as well as valuable time with associate “BIGS,” who volunteer their time to share real-world
+                        experience and professional advice.</p>
+                </div>
+            </div>
+
+            <div class="row responsive-sm row-top last">
+                <div class="col pad">
+                    <p class="blue medium">ARTS & ENTERTAINMENT</p>
+
+                    <p class="brand-body ">We are proud to foster arts and entertainment in our community through
+                        various sponsorships, including the New World Symphony, Cubavera® sponsoring History Miami,
+                        various golf and sports fundraisers and even the Miami HEAT!</p>
+
+                    <div class="row row-center">
+                        <div class="col flexcontainer-center "><img src="images/slides/opglogo2.jpg" style="width:50%;">
+                        </div>
+                        <div class="col flexcontainer-center"><img src="images/slides/heatlogo.jpg" style="width:50%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col pad">
+                    <p class="blue medium">HEALTHCARE</p>
+
+                    <p class="brand-body ">PEI is helping create a world with less cancer…and more birthdays! We joined
+                        300,000 individuals across the country in the American Cancer Society Cancer Prevention Study-3
+                        (CPS-3) as the 1st public company in Miami to serve as a host site.</p>
+
+                    <div class="row row-center">
+
+                        <div class="col col-center flexcontainer-center"><img src="images/slides/cancerlogo.jpg"
+                                                                              style="width:50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="  no-padding"  ng-class="currentSlide >= 46 && currentSlide <= 48 ? 'visible' : 'hidden'">
+      <div  class=" no-padding">
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img src="images/slides/newsletter1.jpg" style="width:200px;">
+                </div>
+                <div class="col-10"></div>
+            </div>
+            <div class="row blue-page responsive-md no-padding">
+                <div class="col col-33 green-pane white-page no-padding"><img src="" style="height:100%;" alt=""></div>
+                 <div class="white-page" style="width:22px;"></div>
+                <div class="col blue-page pad">
+                    <p class="white medium">GREEN INITIATIVES</p>
+
+                    <p class="brand-body first">
+                                <span class="white-bullets">•</span>&nbsp;We celebrated Earth Day at our headquarters
+                                this year with a day of activities aimed at educating and encouraging our associates on
+                                ways to go green.
+                            </p>
+
+                            <p class="brand-body">
+                                <span class="white-bullets">•</span>&nbsp; In order to reduce our collective impact on
+                                the environment, we have placed an emphasis on sustainability in purchasing choices,
+                                saving over 52% each in water, energy and tree consumption, over the previous year,
+                                according to the Staples environmental report.
+                            </p>
+
+                            <p class="brand-body">
+                                <span class="white-bullets">•</span>&nbsp; To further educate our associates and promote
+                                sustainability, we publish a digital quarterly Green Newsletter.
+                            </p>
+
+                            <p class="brand-body">
+                                <span class="white-bullets">•</span>&nbsp;Perry Ellis International recycles electronic
+                                waste generated by our offices through semi-annual pickups of items like monitors,
+                                keyboards, printers, scanners, fax machines and more.
+                            </p>
+
+                            <p class="brand-body">
+                                <span class="white-bullets">•</span>&nbsp; Original Penguin® launched Reduce, Reuse,
+                                Restyle this year, a program that incentivizes consumers to recycle their clothes and
+                                accessories.
+                            </p>
+
+                             <img src="images/slides/reduce.jpg" style="width:50%;">
+                </div>
+            </div>
+
+
+
+                </div>
+           
+    </ion-content>
+</ion-slide>
+
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" class="map-slate blue-page" ng-class="currentSlide >= 47 && currentSlide <= 49 ? 'visible' : 'hidden'">
+        <div><img src="" style="height:100%;" alt=""></div>
+    </ion-content>
+</ion-slide>
+
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 48 && currentSlide <= 50 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row no-padding responsive-md">
+                <div class="col pad last  blue-page ">
+                    <h1 class="white medium text-center">DOMESTIC OFFICES</h1>
+
+                    <p class="brand-body text-center">Commerce, CA</p>
+
+                    <p class="brand-body text-center">Frisco, TX</p>
+
+                    <p class="brand-body text-center">Menomonee Falls, WI</p>
+
+                    <p class="brand-body text-center">Miami, FL (2)</p>
+
+                    <p class="brand-body text-center">New York, NY (4)</p>
+
+                    <p class="brand-body text-center">Portland, OR</p>
+
+                    <p class="brand-body text-center">Seneca, SC</p>
+
+                    <p class="brand-body text-center">Tampa, FL</p>
+
+                    <h1 class="white medium text-center">INTERNATIONAL OFFICES</h1>
+
+                    <p class="brand-body text-center">Beijing</p>
+
+                    <p class="brand-body text-center">Dhaka</p>
+
+                    <p class="brand-body text-center">Dublin</p>
+
+                    <p class="brand-body text-center">Guangzhou</p>
+
+                    <p class="brand-body text-center">Hangzhou</p>
+
+                    <p class="brand-body text-center">Ho Chi Minh City</p>
+
+                    <p class="brand-body text-center">Hong Kong</p>
+
+                    <p class="brand-body text-center">Jakarta</p>
+
+                    <p class="brand-body text-center">London</p>
+
+                    <p class="brand-body text-center">Mexico City</p>
+
+                    <p class="brand-body text-center">Shanghai (2)</p>
+
+                    <p class="brand-body text-center">Taipei</p>
+
+                    <p class="brand-body text-center">Toronto</p>
+
+                    <p class="brand-body text-center">Witham (UK)</p>
+                </div>
+                </div>
+
+               <div class="row no-padding">
+                <div class="col">
+                    <img ng-src="images/slides/miami.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row no-padding 40h">
+                <div class="col">
+                    <img ng-src="images/slides/london1.jpg" style="width:100%;">
+                </div>
+                <div class="col last">
+                    <img ng-src="images/slides/nyc1.jpg" style="width:100%;">
+                </div>
+            </div>
+
+             <div class="row pad">
+                <div class="col first last">
+                    <h1 class="blue-header">RETAIL STORES</h1>
+                </div>
+            </div>
+            <div class="row pad">
+                <div class="col first last">
+                    <img ng-src="images/slides/retail-stores.jpg" style="width:90%;">
+                </div>
+            </div>
+            <div class="row no-padding first">
+                <div class="col">
+                    <img ng-src="images/slides/phillippines.jpg" style="width:100%;">
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 49 && currentSlide <=51 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row responsive-sm ">
+                <div class="col">
+                    <img ng-src="images/slides/china.jpg" style="width:100%;">
+                </div>
+
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/nyc.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/london.jpg" style="width:100%;">
+                </div>
+
+            </div>
+
+            <div class="row responsive-sm">
+                <div class="col">
+                    <img ng-src="images/slides/mexico.jpg" style="width:100%;">
+                </div>
+                <div class="col">
+                    <img ng-src="images/slides/china2.jpg" style="width:100%;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 50 && currentSlide <=52 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row">
+                <div class="col pad">
+                    <h1 class="blue-header">FINANCIAL HIGHLIGHTS</h1>
+                </div>
+            </div>
+            <div class="row responsive-sm ">
+                <div class="col pad last">
+                    <img ng-src="images/slides/highlights1.jpg" style="width:90%;">
+                </div>
+
+            </div>
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 51 && currentSlide <=53 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row responsive-sm ">
+                <div class="col pad last">
+                    <img ng-src="images/slides/highlights2.jpg" style="width:90%;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 52 && currentSlide <=54 ? 'visible' : 'hidden'">
+        <div >
+            <div class="row responsive-sm ">
+                <div class="col pad last">
+                    <img ng-src="images/slides/highlights3.jpg" style="width:90%;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+<ion-slide>
+    <ion-content has-header="true" padding="true" ng-class="currentSlide >= 53 && currentSlide <=55 ? 'visible' : 'hidden'">
+        <div  class=" no-padding">
+
+            <div class="row responsive-sm ">
+                <div class="col">
+                    <img ng-src="images/slides/highlights4.jpg" style="width:90%; padding-bottom:0;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content has-header="true"  ng-class="currentSlide >= 54 && currentSlide <=56 ? 'visible' : 'hidden'">
+            <div class="pad" ng-controller="DirectorCtrl">
+
+                <h1 class="blue-header">DIRECTORS</h1>
+                <p class="grey-medium-body-children">LEFT TO RIGHT </p>
+
+                <ul class="list">
+                    <li class="item item-icon-right item-text-wrap" ng-click="openModal(director)" ng-repeat="director in directors">
+                        <i class="icon ion-ios7-information-outline"></i>
+                        <h2>{{director.name}}</h2>
+                        <p>{{director.position}}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="directors-tab">
+                <img ng-src="images/slides/directors.jpg" style="width:100%;">
+            </div>
+
+    </ion-content>
+</ion-slide>
+
+
+<ion-slide>
+    <ion-content has-header="true" padding="true"  ng-class="currentSlide >= 55 && currentSlide <=57 ? 'visible' : 'hidden'">
+        <div class=" no-padding">
+            <div class="row responsive-sm ">
+                <div class="col pad last">
+                    <img ng-src="images/slides/highlights5.jpg" style="width:90%;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-slide>
+
+
+</ion-slide-box>
+
+</ion-view>
