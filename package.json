@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development node server.js",
-    "setup": "npm install && touch .env && NODE_ENV=production pm2 start server.js --name kmartinezmedia.com/pei-annual-report",
+    "pm2": "NODE_ENV=production pm2 start server.js --name kmartinezmedia.com/pei-annual-report",
     "production": "git pull && NODE_ENV=production pm2 restart kmartinezmedia.com/pei-annual-report --update-env"
   },
   "author": "",
